@@ -1,5 +1,6 @@
 .container{
     margin-top: -10px;
+    background-color: rgba(75, 0, 130, 0.6);
 }
 .tabs-container{    
     width: 100%;
@@ -8,19 +9,18 @@
     position: relative;
     top: -75px;
 }
-.tabs-headings, .tabs-contents{
-    margin: 20px 0px 20px 0px;
-    display: flex;
-    flex-direction: row;
-}
 .tabs-headings{
-    width: 25%;
     align-self: flex-end;
     float: right;
-    margin-top: 0px
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
 }
 .tabs-contents{
+    margin-top: 0px;
     align-self: center;
+    justify-self: flex-start;
 }
 h1{
     padding-top: 30px;
