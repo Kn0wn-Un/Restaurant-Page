@@ -1,3 +1,3 @@
-let temp = document.querySelector("div");
-temp.innerHTML = "Using NPM and WEBPACK";
+//let temp = document.querySelector("div");
+//temp.innerHTML = "Using NPM and WEBPACK";
 console.log("initial commit");
