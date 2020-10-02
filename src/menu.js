@@ -1,25 +1,22 @@
 export const Menu = (()=>{
-    const addTab = (contents)=>{
+    const addTab = ()=>{
         let tHead = document.querySelector(".tabs-headings");
         let h = document.createElement("div");
         h.innerHTML = "Menu";
         h.id = "Menu";
-        h.addEventListener("click", ()=>{showContent(contents)});
+        h.addEventListener("click", ()=>{showContent(h)});
         tHead.appendChild(h);
     }    
-    const showContent = (contents)=>{
+    const showContent = (tab)=>{
+        let contents = document.querySelector(".tabs-contents");
+        let preActive = document.querySelector(".active-tab");
+        document.querySelector("body").style.background = "black"; 
+        if(preActive != null) 
+            preActive.classList.remove("active-tab");
+        tab.classList.add("active-tab"); 
         contents.innerHTML = "";
         contents.innerHTML = 
-        `<h3> Menu </h3><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo sodales, eleifend metus a, tincidunt nunc. 
-        Vivamus eget eros consequat, efficitur est a, 
-        placerat elit. Aenean vestibulum velit vitae lorem luctus, 
-        vitae iaculis ex imperdiet. Nullam sed iaculis diam. 
-        Quisque sapien quam, pharetra in dignissim ac, 
-        lacinia sed tortor. Vivamus eget purus non leo mattis luctus. 
-        Nunc bibendum velit a porttitor eleifend. 
-        Morbi varius sapien quis enim sagittis, in efficitur justo blandit. 
-        Donec rutrum accumsan velit, ut placerat mauris varius vel. 
-        In consectetur, dui id bibendum ultricies, sapien libero venenatis 
+        `<h3> Menu </h3><br>
         tortor, blandit feugiat mauris turpis sit amet risus. 
         Donec laoreet lacus eget ante efficitur, sit amet pretium turpis 
         vulputate.`;

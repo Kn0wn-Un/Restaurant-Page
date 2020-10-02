@@ -1,29 +1,28 @@
 export const Home = (()=>{
-    const addTab = (contents)=>{
+    const addTab = ()=>{
         let tHead = document.querySelector(".tabs-headings");
         let h = document.createElement("div");
         h.innerHTML = "Home";
         h.id = "Home";
-        h.addEventListener("click", ()=>{showContent(contents)});
+        h.addEventListener("click", ()=>{showContent(h)});
         tHead.appendChild(h);
-        showContent(contents);
+        showContent(h);
     }    
-    const showContent = (contents)=>{
+    const showContent = (tab)=>{
+        let contents = document.querySelector(".tabs-contents");
+        let preActive = document.querySelector(".active-tab");
+        if(preActive != null) 
+            preActive.classList.remove("active-tab");
+        tab.classList.add("active-tab"); 
+        document.querySelector("body").style.background = 'url("dist/table.jpg")'; 
+        document.querySelector("body").style.backgroundRepeat = "no-repeat";
+        document.querySelector("body").style.backgroundSize = "100% 100%";
         contents.innerHTML = "";
         contents.innerHTML = 
-        `<h3> Home </h3><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut justo sodales, eleifend metus a, tincidunt nunc. 
-        Vivamus eget eros consequat, efficitur est a, 
-        placerat elit. Aenean vestibulum velit vitae lorem luctus, 
-        vitae iaculis ex imperdiet. Nullam sed iaculis diam. 
-        Quisque sapien quam, pharetra in dignissim ac, 
-        lacinia sed tortor. Vivamus eget purus non leo mattis luctus. 
-        Nunc bibendum velit a porttitor eleifend. 
-        Morbi varius sapien quis enim sagittis, in efficitur justo blandit. 
-        Donec rutrum accumsan velit, ut placerat mauris varius vel. 
-        In consectetur, dui id bibendum ultricies, sapien libero venenatis 
-        tortor, blandit feugiat mauris turpis sit amet risus. 
-        Donec laoreet lacus eget ante efficitur, sit amet pretium turpis 
-        vulputate.`;
+        `<h2> Welcome </h2><br>
+        <h3>To The Restaurant</h3><br>
+        The Restaurant is a Restaurant, bar and coffee roastery located in Antartica.
+        We have awesome recipes and the most talented chefs in town!(&#128039;)`;
     }
     return { addTab }
 })();
