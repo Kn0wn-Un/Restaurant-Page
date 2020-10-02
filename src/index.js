@@ -7,7 +7,8 @@ const mainPage = (()=>{
 
     const addHeading = ()=>{
         let rName = document.createElement("h1");
-        rName.innerHTML = "Restaurant Name";
+        rName.innerHTML = "IceHut";
+        rName.style.color = "rgb(100, 100, 255)";
         container.appendChild(rName);
     }
     

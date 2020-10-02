@@ -2,6 +2,7 @@ export const Menu = (()=>{
     const addTab = ()=>{
         let tHead = document.querySelector(".tabs-headings");
         let h = document.createElement("div");
+        h.classList.add("head"); 
         h.innerHTML = "Menu";
         h.id = "Menu";
         h.addEventListener("click", ()=>{showContent(h)});
