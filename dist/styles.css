@@ -32,7 +32,7 @@ h1{
     font-size: 40px;
     margin: 0px;
     padding: 30px;
-    border-bottom: 2px solid rgb(100, 100, 255);
+    border-bottom: 2px solid rgb(128, 147, 241);
     background-color: rgba(244, 172, 183, 0.9);
 }
 .head{
@@ -47,8 +47,14 @@ h1{
 }
 .active-tab{
     background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 7px rgb(100, 100, 255);
+    box-shadow: inset 0px -5px rgb(128, 147, 241);
+    animation-name: addShadow;
+    animation-duration: 0.25s;
     color: black;
+}
+@keyframes addShadow{
+    from {box-shadow: inset 0px 0px}
+    to {box-shadow: inset 0px -5px rgb(128, 147, 241);}
 }
 h2, h3{
     text-align: center;
@@ -70,7 +76,7 @@ h3{
     max-width: 300px;
     background-color: rgba(224 ,180,221, 0.9);
     box-shadow: 5px 5px 5px palevioletred;
-    border-radius: 10%;
+    border-radius: 5%;
     grid-template-columns: 25% 25% auto auto;
     grid-template-areas: 
     "title title title title"
@@ -79,12 +85,11 @@ h3{
     " . . review review"
     " translate translate translate translate";
 }
-img {
+.review img{
     grid-area: img;
     padding: 0% 10% 0% 0%;
     width: 95%;
     height: 100%;
-    border-radius: 10%;
 }
 .review-title{
     color: purple;

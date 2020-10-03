@@ -87,12 +87,13 @@ export const Menu = (()=>{
     const showContent = (tab)=>{
         let contents = document.querySelector(".tabs-contents");
         let preActive = document.querySelector(".active-tab");
-        document.querySelector("body").style.background = "rgb(203, 153, 126)"; 
-        document.querySelector("h1").style.background = "rgb(230, 190, 174)";
+        document.querySelector("body").style.background = "rgb(247, 217, 196)"; 
+        document.querySelector("h1").style.background = "rgb(247, 175, 157)";
         if(preActive != null) 
             preActive.classList.remove("active-tab");
         tab.classList.add("active-tab"); 
         contents.style.width= "100%";
+        contents.style.textAlign = 'left';
         contents.innerHTML = "";
         contents.innerHTML = 
         `

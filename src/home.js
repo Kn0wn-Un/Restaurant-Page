@@ -18,8 +18,9 @@ export const Home = (()=>{
         document.querySelector("body").style.background = 'url("dist/table.jpeg")'; 
         document.querySelector("body").style.backgroundRepeat = "no-repeat";
         document.querySelector("body").style.backgroundSize = "100% 100%";
-        document.querySelector("h1").style.background = "rgba(224 ,180,221, 0.9)";
+        document.querySelector("h1").style.background = "rgba(244, 172, 183, 0.9)";
         contents.style.width= "auto";
+        contents.style.textAlign = 'left';
         contents.innerHTML = "";
         contents.innerHTML = 
         `<h2> Welcome to,</h2><br>
