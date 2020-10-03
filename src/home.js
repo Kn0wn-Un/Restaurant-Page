@@ -15,7 +15,7 @@ export const Home = (()=>{
         if(preActive != null) 
             preActive.classList.remove("active-tab");
         tab.classList.add("active-tab"); 
-        document.querySelector("body").style.background = 'url("dist/table.jpeg")'; 
+        document.querySelector("body").style.background = 'url("https://raw.githubusercontent.com/Kn0wn-Un/Restaurant-Page/master/dist/table.jpeg")'; 
         document.querySelector("body").style.backgroundRepeat = "no-repeat";
         document.querySelector("body").style.backgroundSize = "100% 100%";
         document.querySelector("h1").style.background = "rgba(244, 172, 183, 0.9)";
@@ -28,7 +28,7 @@ export const Home = (()=>{
         The IceHut is a Restaurant, bar and ice-cream parlor located in Antartica.
         We have awesome recipes and the most talented chefs in town!(&#128039;)`+
         `<div class="review">
-        <img src="dist/penguin.jpg" alt="Penguin">
+        <img src="https://raw.githubusercontent.com/Kn0wn-Un/Restaurant-Page/master/dist/penguin.jpg" alt="Penguin">
         <div class="review-title">Our customer review:</div>
         <div class="review-name">Bob</div>
         <div class="review-sub">Local Penguin, Happy customer</div>
