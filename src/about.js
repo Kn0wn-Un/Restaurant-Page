@@ -31,7 +31,7 @@ export const About = (()=>{
         Our restaurant is covered in ice most of the time, Good Luck finding it maybe ask the whales or penguins for the direction.
         <br>(watch out for the bears though!)<br><br>
         <h3>Contact Us</h3><br>
-        You really we get phone signals or landline?<br><br><br><br><br><br>
+        You really think we get phone signals or landline?<br><br><br><br><br><br>
         <a href="https://github.com/Kn0wn-Un/Restaurant-Page">${git.outerHTML}</a>`; 
     } 
     return { addTab }
